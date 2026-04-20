@@ -46,7 +46,7 @@
     .wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
 
     .top-accent{
-      height:8px;
+      height:6px;
       background:linear-gradient(90deg,#ff9a74 0%, #f46d46 40%, #ffb697 100%);
     }
 
@@ -54,19 +54,19 @@
       position:sticky;
       top:0;
       z-index:50;
-      background:rgba(255,255,255,.92);
+      background:rgba(255,255,255,.94);
       backdrop-filter:blur(10px);
       border-bottom:1px solid rgba(244,109,70,.10);
     }
     .topbar-inner{
-      min-height:78px;
+      min-height:60px;
       display:flex;
       align-items:center;
       justify-content:flex-start;
       gap:16px;
     }
     .brand img{
-      height:36px;
+      height:28px;
       width:auto;
     }
 
@@ -83,17 +83,13 @@
       transition:.25s ease;
       letter-spacing:-.01em;
       transform:translateY(0);
+      text-align:center;
     }
     .btn:hover{transform:translateY(-2px)}
     .btn-green{
       color:#fff;
       background:linear-gradient(180deg,var(--green),var(--green-dark));
       box-shadow:0 14px 28px rgba(24,182,99,.22);
-    }
-    .btn-white{
-      background:#fff;
-      color:var(--text);
-      border:1px solid var(--line);
     }
     .btn-orange{
       color:#fff;
@@ -137,7 +133,7 @@
     }
 
     .hero{
-      padding:20px 0 28px;
+      padding:16px 0 24px;
     }
     .hero-shell{
       background:
@@ -146,33 +142,78 @@
       border:1px solid #f2ddd3;
       border-radius:34px;
       box-shadow:var(--shadow);
-      padding:26px;
+      padding:18px;
     }
     .hero-grid{
       display:grid;
-      grid-template-columns:1.02fr .98fr;
-      gap:26px;
+      grid-template-columns:1fr 0.95fr;
+      gap:22px;
       align-items:center;
     }
 
     .hero-left h1{
-      margin:0 0 14px;
-      font-size:clamp(40px,5.4vw,74px);
+      margin:8px 0 14px;
+      font-size:clamp(40px,5.4vw,72px);
       line-height:.95;
       letter-spacing:-.065em;
       max-width:8.8ch;
     }
     .hero-sub{
-      margin:0 0 18px;
+      margin:0 0 16px;
       font-size:18px;
       color:#3a485c;
       max-width:34ch;
     }
 
+    .urgency-bar{
+      margin:0 0 16px;
+      background:linear-gradient(180deg,#fff8f1 0%, #fff1e5 100%);
+      border:1px solid #ffd8c6;
+      border-radius:20px;
+      padding:12px 14px;
+      box-shadow:var(--shadow-soft);
+    }
+    .urgency-inline{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+    .urgency-label{
+      font-size:13px;
+      font-weight:800;
+      color:#e85d3a;
+      letter-spacing:.02em;
+    }
+    .countdown{
+      font-size:14px;
+      font-weight:800;
+      color:#1f2e43;
+    }
+
+    .social-proof{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      flex-wrap:wrap;
+      margin:0 0 18px;
+    }
+    .proof-pill{
+      background:#fff;
+      border:1px solid #eee2db;
+      padding:9px 13px;
+      border-radius:999px;
+      font-size:13px;
+      color:#445368;
+      box-shadow:var(--shadow-soft);
+      font-weight:700;
+    }
+
     .hero-checks{
       display:grid;
       gap:10px;
-      margin:0 0 20px;
+      margin:0 0 18px;
     }
     .hero-check{
       display:flex;
@@ -194,67 +235,6 @@
       font-weight:900;
     }
 
-    .urgency-bar{
-      margin:0 0 18px;
-      background:linear-gradient(180deg,#fff8f1 0%, #fff1e5 100%);
-      border:1px solid #ffd8c6;
-      border-radius:22px;
-      padding:16px 18px;
-      box-shadow:var(--shadow-soft);
-    }
-    .urgency-top{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:10px;
-      flex-wrap:wrap;
-      margin-bottom:10px;
-    }
-    .urgency-badge{
-      display:inline-flex;
-      align-items:center;
-      gap:8px;
-      background:#fff;
-      border:1px solid #ffd6c5;
-      color:var(--accent-dark);
-      border-radius:999px;
-      padding:8px 12px;
-      font-size:12px;
-      font-weight:800;
-      letter-spacing:.03em;
-      text-transform:uppercase;
-    }
-    .countdown{
-      font-size:14px;
-      font-weight:800;
-      color:#1f2e43;
-    }
-    .urgency-note{
-      margin:0;
-      font-size:14px;
-      color:#58677b;
-    }
-
-    .social-proof{
-      display:flex;
-      flex-wrap:wrap;
-      gap:10px;
-      margin:0 0 20px;
-    }
-    .proof-pill{
-      display:inline-flex;
-      align-items:center;
-      gap:8px;
-      background:#fff;
-      border:1px solid var(--line);
-      border-radius:999px;
-      padding:10px 14px;
-      font-size:13px;
-      color:#445368;
-      box-shadow:var(--shadow-soft);
-      font-weight:700;
-    }
-
     .mini-offer{
       background:linear-gradient(180deg,#fff9f4 0%, #fff1e8 100%);
       border:1px solid #ffd9c9;
@@ -264,7 +244,7 @@
       display:grid;
       grid-template-columns:1fr auto;
       gap:16px;
-      align-items:end;
+      align-items:center;
     }
     .mini-offer h3{
       margin:0 0 8px;
@@ -275,10 +255,10 @@
     .mini-offer p{
       margin:0;
       color:#4f5d72;
-      max-width:40ch;
+      max-width:34ch;
     }
     .mini-offer img{
-      width:140px;
+      width:130px;
       height:auto;
       filter:drop-shadow(0 18px 28px rgba(0,0,0,.14));
     }
@@ -304,9 +284,8 @@
       position:relative;
       border-radius:24px;
       overflow:hidden;
-      min-height:375px;
-      background:
-        radial-gradient(circle at center, #fff8f3 0%, #fff1e9 100%);
+      min-height:350px;
+      background:radial-gradient(circle at center, #fff8f3 0%, #fff1e9 100%);
       border:1px solid #f2ddd4;
       display:flex;
       align-items:center;
@@ -315,21 +294,18 @@
     }
     .product-visual img{
       width:100%;
-      max-width:500px;
+      max-width:380px;
       height:auto;
       object-fit:contain;
-      filter:drop-shadow(0 28px 38px rgba(0,0,0,.16));
+      filter:drop-shadow(0 35px 45px rgba(0,0,0,.18));
     }
     .product-badge{
-      position:absolute;
-      right:16px;
-      bottom:16px;
+      margin-top:12px;
       background:rgba(255,255,255,.96);
       border:1px solid #f2ddd4;
       border-radius:18px;
       padding:14px 16px;
       box-shadow:0 12px 24px rgba(15,23,42,.08);
-      max-width:250px;
     }
     .product-badge strong{
       display:block;
@@ -500,11 +476,11 @@
     }
     .media-box.landscape img{
       width:85%;
-      max-width:520px;
+      max-width:480px;
       height:auto;
       object-fit:contain;
       filter:drop-shadow(0 25px 40px rgba(0,0,0,.18));
-      transform:scale(1.03);
+      transform:scale(1.02);
     }
     .media-box.portrait img{
       width:100%;
@@ -517,10 +493,6 @@
       margin-top:12px;
       font-size:13px;
       color:var(--muted);
-    }
-
-    .faq-image-box img{
-      object-position:center;
     }
 
     .compare{
@@ -627,31 +599,27 @@
     }
 
     @media (max-width: 720px){
-      .topbar-inner{min-height:72px}
-      .brand img{height:30px}
-      .hero{padding-top:16px}
-      .hero-shell{padding:16px}
-
+      .topbar-inner{min-height:56px}
+      .brand img{height:26px}
+      .wrap{padding:0 16px}
+      .hero{padding-top:14px}
+      .hero-shell{padding:14px}
       .hero-left h1{
-        font-size:42px;
-        line-height:.96;
-        max-width:none;
+        font-size:34px;
+        line-height:.98;
+        letter-spacing:-.05em;
       }
-
       .hero-sub{
         font-size:16px;
         margin-bottom:14px;
       }
-
       .btn{
         width:100%;
       }
-
-      .grid-3{grid-template-columns:1fr}
-      .grid-2{grid-template-columns:1fr}
-
+      .grid-3,.grid-2{
+        grid-template-columns:1fr;
+      }
       .product-panel{padding:12px}
-
       .product-visual{
         min-height:auto;
         padding:12px;
@@ -659,76 +627,61 @@
       .product-visual img{
         width:100%;
         max-width:220px;
-        max-height:none;
-        object-fit:contain;
       }
-      .product-badge{
-        position:static;
-        margin-top:12px;
-        max-width:none;
-        padding:12px 14px;
-      }
-
       .product-info{
         grid-template-columns:1fr;
       }
-
       .media-card{
         padding:12px;
       }
-
       .media-box.portrait{
         aspect-ratio:auto;
-        min-height:260px;
+        min-height:250px;
         padding:14px;
       }
       .media-box.portrait img{
         width:100%;
         height:auto;
-        max-height:340px;
-        object-fit:contain;
-        object-position:center;
-      }
-
-      .faq-image-box{
-        min-height:240px;
-      }
-      .faq-image-box img{
-        width:100%;
-        height:auto;
         max-height:320px;
         object-fit:contain;
-        object-position:center;
       }
-
       .media-box.landscape{
         aspect-ratio:auto;
-        min-height:220px;
+        min-height:210px;
         padding:14px;
       }
       .media-box.landscape img{
         width:100%;
-        max-width:260px;
-        max-height:none;
+        max-width:250px;
         height:auto;
         object-fit:contain;
         transform:none;
       }
-
       .card{padding:20px}
       .section-title{font-size:32px}
       .feature-item{padding:12px 0}
-
       .cta-band h3{font-size:26px}
       .cta-band-inner{
         padding:24px 22px;
       }
-
-      .urgency-top{
+      .urgency-inline{
         align-items:flex-start;
       }
-
-      body{padding-bottom:0}
+      .social-proof{
+        margin-bottom:16px;
+      }
+      .proof-pill{
+        width:100%;
+      }
+      .mini-offer{
+        padding:18px;
+      }
+      .mini-offer h3{
+        font-size:24px;
+      }
+      .mini-offer .btn{
+        width:100%;
+      }
     }
   </style>
 </head>
@@ -757,13 +710,10 @@
           <div class="hero-grid">
             <div class="hero-left">
               <div class="urgency-bar">
-                <div class="urgency-top">
-                  <div class="urgency-badge">Limited-time check</div>
-                  <div class="countdown">Offer refresh in <span id="countdown">23:59:59</span></div>
+                <div class="urgency-inline">
+                  <div class="urgency-label">🔥 TODAY'S DEAL CHECK</div>
+                  <div class="countdown">Ends in <span id="countdown">23:59:59</span></div>
                 </div>
-                <p class="urgency-note">
-                  Popular package availability and deal pages can change during the day, so checking sooner helps.
-                </p>
               </div>
 
               <h1>Thinking About Trying CitrusBurn?</h1>
@@ -773,9 +723,9 @@
               </p>
 
               <div class="social-proof">
-                <div class="proof-pill">⭐ Clean, premium layout</div>
-                <div class="proof-pill">🔥 Popular with routine-focused buyers</div>
-                <div class="proof-pill">✔ Quick official site access</div>
+                <div class="proof-pill">⭐⭐⭐⭐⭐ Trusted layout</div>
+                <div class="proof-pill">✔ Updated for 2026</div>
+                <div class="proof-pill">🔥 High-interest product</div>
               </div>
 
               <div class="hero-checks">
@@ -794,7 +744,7 @@
                     href="https://7408d6mem4ypzz54mf5lz7xgob.hop.clickbank.net"
                     rel="nofollow sponsored noopener"
                     target="_blank"
-                  >🔥 Check Official Website</a>
+                  >🔥 Check Today's Official Deal</a>
                 </div>
 
                 <img src="6 bottle.png" alt="CitrusBurn package image" />
@@ -1046,7 +996,7 @@
         </div>
 
         <div class="media-card">
-          <div class="media-box portrait faq-image-box">
+          <div class="media-box portrait">
             <img src="woman1.png" alt="Woman holding CitrusBurn bottle" />
           </div>
         </div>
