@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CitrusBurn Review | Independent Overview</title>
+  <meta
+    name="description"
+    content="Independent CitrusBurn review with a premium overview of the product, routine fit, and where to check the official website."
+  />
+  <style>
+    :root{
+      --bg:#fcfaf8;
+      --bg-soft:#fff4ed;
+      --bg-soft-2:#fff8f4;
+      --card:#ffffff;
+      --text:#132033;
+      --muted:#627086;
+      --line:#efd8ce;
+      --accent:#f46d46;
+      --accent-dark:#d75835;
+      --green:#18b663;
+      --green-dark:#109553;
+      --orange-btn:#ff8a18;
+      --orange-btn-dark:#f06d00;
+      --shadow:0 22px 52px rgba(69,31,17,.10);
+      --shadow-soft:0 10px 24px rgba(15,23,42,.05);
+      --radius:28px;
+      --max:1140px;
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Inter, Arial, Helvetica, sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(circle at top right, rgba(244,109,70,.08), transparent 24%),
+        linear-gradient(180deg, #fffdfb 0%, var(--bg) 100%);
+      line-height:1.55;
+    }
+
+    img{display:block;max-width:100%}
+    a{text-decoration:none;color:inherit}
+    .wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+
+    .top-accent{
+      height:8px;
+      background:linear-gradient(90deg,#ff9a74 0%, #f46d46 40%, #ffb697 100%);
+    }
+
+    .topbar{
+      position:sticky;
+      top:0;
+      z-index:50;
+      background:rgba(255,255,255,.92);
+      backdrop-filter:blur(10px);
+      border-bottom:1px solid rgba(244,109,70,.10);
+    }
+    .topbar-inner{
+      min-height:78px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+    }
+    .brand img{
+      height:36px;
+      width:auto;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      border:none;
+      border-radius:999px;
+      padding:16px 24px;
+      font-weight:800;
+      cursor:pointer;
+      transition:.2s ease;
+      letter-spacing:-.01em;
+    }
+    .btn:hover{transform:translateY(-1px)}
+    .btn-green{
+      color:#fff;
+      background:linear-gradient(180deg,var(--green),var(--green-dark));
+      box-shadow:0 14px 28px rgba(24,182,99,.22);
+    }
+    .btn-white{
+      background:#fff;
+      color:var(--text);
+      border:1px solid var(--line);
+    }
+    .btn-orange{
+      color:#fff;
+      background:linear-gradient(180deg,var(--orange-btn),var(--orange-btn-dark));
+      box-shadow:0 14px 28px rgba(255,138,24,.24);
+    }
+
+    .newsbar{
+      padding:12px 0 0;
+    }
+    .newsbar-inner{
+      display:flex;
+      align-items:center;
+      gap:14px;
+      flex-wrap:wrap;
+      color:var(--muted);
+      font-size:13px;
+    }
+    .tag{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      background:var(--bg-soft);
+      color:var(--accent-dark);
+      border:1px solid #ffd8ca;
+      padding:8px 12px;
+      border-radius:999px;
+      font-weight:800;
+      text-transform:uppercase;
+      letter-spacing:.04em;
+      font-size:12px;
+    }
+
+    .hero{
+      padding:20px 0 28px;
+    }
+    .hero-shell{
+      background:
+        radial-gradient(circle at top left, rgba(244,109,70,.09), transparent 30%),
+        linear-gradient(180deg, #fffaf7 0%, var(--bg-soft-2) 100%);
+      border:1px solid #f2ddd3;
+      border-radius:34px;
+      box-shadow:var(--shadow);
+      padding:26px;
+    }
+    .hero-grid{
+      display:grid;
+      grid-template-columns:1.02fr .98fr;
+      gap:26px;
+      align-items:center;
+    }
+
+    .hero-left h1{
+      margin:0 0 14px;
+      font-size:clamp(40px,5.4vw,74px);
+      line-height:.95;
+      letter-spacing:-.065em;
+      max-width:8.8ch;
+    }
+    .hero-sub{
+      margin:0 0 18px;
+      font-size:18px;
+      color:#3a485c;
+      max-width:34ch;
+    }
+
+    .hero-checks{
+      display:grid;
+      gap:10px;
+      margin:0 0 20px;
+    }
+    .hero-check{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      color:#223146;
+      font-weight:700;
+      font-size:15px;
+    }
+    .hero-check span{
+      width:26px;
+      height:26px;
+      min-width:26px;
+      display:grid;
+      place-items:center;
+      border-radius:999px;
+      background:#ecfbf3;
+      color:var(--green-dark);
+      font-weight:900;
+    }
+
+    .mini-offer{
+      background:linear-gradient(180deg,#fff9f4 0%, #fff1e8 100%);
+      border:1px solid #ffd9c9;
+      border-radius:28px;
+      padding:22px;
+      box-shadow:var(--shadow-soft);
+      display:grid;
+      grid-template-columns:1fr auto;
+      gap:16px;
+      align-items:end;
+    }
+    .mini-offer h3{
+      margin:0 0 8px;
+      font-size:28px;
+      line-height:1.02;
+      letter-spacing:-.04em;
+    }
+    .mini-offer p{
+      margin:0;
+      color:#4f5d72;
+      max-width:40ch;
+    }
+    .mini-offer img{
+      width:140px;
+      height:auto;
+      filter:drop-shadow(0 18px 28px rgba(0,0,0,.14));
+    }
+    .mini-offer .btn{
+      margin-top:14px;
+      width:max-content;
+    }
+
+    .hero-right{
+      display:flex;
+      justify-content:center;
+    }
+    .product-panel{
+      width:100%;
+      background:linear-gradient(180deg,#fff 0%, #fff7f3 100%);
+      border:1px solid var(--line);
+      border-radius:32px;
+      box-shadow:var(--shadow-soft);
+      overflow:hidden;
+      padding:14px;
+    }
+    .product-visual{
+      position:relative;
+      border-radius:24px;
+      overflow:hidden;
+      min-height:375px;
+      background:
+        radial-gradient(circle at center, #fff8f3 0%, #fff1e9 100%);
+      border:1px solid #f2ddd4;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:18px;
+    }
+    .product-visual img{
+      width:100%;
+      max-width:500px;
+      height:auto;
+      object-fit:contain;
+      filter:drop-shadow(0 28px 38px rgba(0,0,0,.16));
+    }
+    .product-badge{
+      position:absolute;
+      right:16px;
+      bottom:16px;
+      background:rgba(255,255,255,.96);
+      border:1px solid #f2ddd4;
+      border-radius:18px;
+      padding:14px 16px;
+      box-shadow:0 12px 24px rgba(15,23,42,.08);
+      max-width:250px;
+    }
+    .product-badge strong{
+      display:block;
+      font-size:16px;
+      margin-bottom:4px;
+    }
+    .product-badge span{
+      font-size:13px;
+      color:var(--muted);
+    }
+
+    .product-info{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:10px;
+      margin-top:12px;
+    }
+    .pinfo{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:14px 10px;
+      text-align:center;
+    }
+    .pinfo strong{
+      display:block;
+      font-size:16px;
+      line-height:1.1;
+      margin-bottom:4px;
+    }
+    .pinfo span{
+      display:block;
+      font-size:13px;
+      color:var(--muted);
+      line-height:1.3;
+    }
+
+    .panel-cta{
+      margin-top:14px;
+      display:grid;
+      gap:10px;
+    }
+    .panel-cta .btn{
+      width:100%;
+      font-size:17px;
+      padding:18px 22px;
+    }
+    .cta-note{
+      text-align:center;
+      color:#5f6f84;
+      font-size:13px;
+    }
+
+    section{padding:18px 0}
+    .section-title{
+      margin:0 0 10px;
+      font-size:clamp(28px,3vw,42px);
+      line-height:1.05;
+      letter-spacing:-.045em;
+    }
+    .section-sub{
+      margin:0 0 18px;
+      color:var(--muted);
+      max-width:62ch;
+    }
+
+    .grid-2{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:18px;
+    }
+    .grid-3{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:18px;
+    }
+
+    .card{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      padding:24px;
+      box-shadow:var(--shadow-soft);
+    }
+    .card h3{
+      margin:0 0 8px;
+      font-size:24px;
+      letter-spacing:-.03em;
+    }
+    .card p{
+      margin:0;
+      color:#4a586d;
+    }
+    .icon{
+      width:52px;
+      height:52px;
+      display:grid;
+      place-items:center;
+      margin-bottom:14px;
+      border-radius:16px;
+      background:#fff2ea;
+      border:1px solid #ffdccc;
+      color:var(--accent-dark);
+      font-size:24px;
+    }
+
+    .feature-list{
+      display:grid;
+      gap:14px;
+    }
+    .feature-item{
+      display:flex;
+      gap:14px;
+      align-items:flex-start;
+      padding:15px 0;
+      border-bottom:1px solid #f4e2da;
+    }
+    .feature-item:last-child{
+      border-bottom:none;
+      padding-bottom:0;
+    }
+    .tick{
+      width:30px;
+      height:30px;
+      min-width:30px;
+      border-radius:999px;
+      display:grid;
+      place-items:center;
+      background:#ecfbf3;
+      color:var(--green-dark);
+      font-weight:900;
+      margin-top:2px;
+    }
+    .feature-item strong{
+      display:block;
+      margin-bottom:2px;
+    }
+    .feature-item span{
+      display:block;
+      color:var(--muted);
+      font-size:14px;
+    }
+
+    .media-card{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:30px;
+      padding:14px;
+      box-shadow:var(--shadow-soft);
+    }
+    .media-box{
+      width:100%;
+      border-radius:22px;
+      overflow:hidden;
+      border:1px solid #f1ddd5;
+      background:#fff7f3;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+    .media-box.landscape{
+      aspect-ratio:16 / 10;
+      background:radial-gradient(circle at center, #fff8f3 0%, #fff1e9 100%);
+    }
+    .media-box.portrait{
+      aspect-ratio:4 / 5;
+    }
+    .media-box.landscape img{
+      width:85%;
+      max-width:520px;
+      height:auto;
+      object-fit:contain;
+      filter:drop-shadow(0 25px 40px rgba(0,0,0,.18));
+      transform:scale(1.08);
+    }
+    .media-box.portrait img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      object-position:center;
+    }
+    .media-caption{
+      margin-top:12px;
+      font-size:13px;
+      color:var(--muted);
+    }
+
+    .faq-image-box img{
+      object-position:center 20%;
+    }
+
+    .compare{
+      width:100%;
+      border-collapse:collapse;
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:24px;
+      overflow:hidden;
+      box-shadow:var(--shadow-soft);
+    }
+    .compare th,.compare td{
+      padding:16px 18px;
+      border-bottom:1px solid #f4e2da;
+      text-align:left;
+    }
+    .compare th{
+      background:#fff5ef;
+      color:#5d6678;
+      font-size:13px;
+      text-transform:uppercase;
+      letter-spacing:.07em;
+    }
+    .compare tr:last-child td{border-bottom:none}
+
+    .cta-band{
+      margin:24px 0 6px;
+      border-radius:34px;
+      overflow:hidden;
+      background:linear-gradient(135deg,var(--accent) 0%, #ff7f57 45%, #ff9a78 100%);
+      color:#fff;
+      box-shadow:0 22px 44px rgba(244,109,70,.22);
+    }
+    .cta-band-inner{
+      padding:30px 28px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:22px;
+    }
+    .cta-band h3{
+      margin:0 0 8px;
+      font-size:36px;
+      line-height:1;
+      letter-spacing:-.045em;
+    }
+    .cta-band p{
+      margin:0;
+      color:rgba(255,255,255,.95);
+      max-width:46ch;
+    }
+    .cta-band .btn-green{
+      background:#fff;
+      color:#162033;
+      box-shadow:none;
+    }
+
+    .faq{
+      display:grid;
+      gap:14px;
+    }
+    .faq details{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:18px 20px;
+      box-shadow:0 8px 18px rgba(15,23,42,.03);
+    }
+    .faq summary{
+      cursor:pointer;
+      font-weight:800;
+      list-style:none;
+    }
+    .faq summary::-webkit-details-marker{display:none}
+    .faq p{
+      margin:12px 0 0;
+      color:#4a586d;
+    }
+
+    .legal{
+      padding:34px 0 48px;
+      border-top:1px solid #f3ddd4;
+      margin-top:24px;
+      color:var(--muted);
+      font-size:13px;
+    }
+
+    .sticky-cta{
+      position:fixed;
+      left:14px;
+      right:14px;
+      bottom:14px;
+      z-index:60;
+      display:none;
+    }
+    .sticky-cta a{
+      width:100%;
+      justify-content:center;
+      border-radius:18px;
+    }
+
+    @media (max-width: 1020px){
+      .hero-grid,.grid-3,.grid-2{
+        grid-template-columns:1fr;
+      }
+      .hero-left h1{max-width:none}
+      .hero-sub{max-width:none}
+      .mini-offer{
+        grid-template-columns:1fr;
+      }
+      .mini-offer img{
+        display:none;
+      }
+      .cta-band-inner{
+        flex-direction:column;
+        align-items:flex-start;
+      }
+    }
+
+    @media (max-width: 720px){
+      .topbar-inner{min-height:72px}
+      .brand img{height:30px}
+      .hero{padding-top:16px}
+      .hero-shell{padding:16px}
+
+      .hero-left h1{
+        font-size:42px;
+        line-height:.96;
+        max-width:none;
+      }
+
+      .hero-sub{
+        font-size:16px;
+        margin-bottom:14px;
+      }
+
+      .hero-actions .btn,
+      .btn{
+        width:100%;
+      }
+
+      .grid-3{grid-template-columns:1fr}
+      .grid-2{grid-template-columns:1fr}
+
+      .hero-card{padding:12px}
+      .product-panel{padding:12px}
+
+      .product-visual{
+        min-height:auto;
+        max-height:260px;
+        padding:12px;
+      }
+      .product-visual img{
+        width:75%;
+        max-width:260px;
+        max-height:200px;
+        object-fit:contain;
+      }
+      .product-badge{
+        left:12px;
+        right:12px;
+        bottom:12px;
+        max-width:none;
+        padding:10px 12px;
+      }
+
+      .product-info{
+        grid-template-columns:1fr;
+      }
+
+      .media-card{
+        padding:12px;
+      }
+
+      .media-box.portrait{
+        aspect-ratio:auto;
+        max-height:220px;
+        min-height:0;
+      }
+      .media-box.portrait img{
+        width:100%;
+        height:220px;
+        max-height:220px;
+        object-fit:cover;
+        object-position:center top;
+      }
+
+      .faq-image-box{
+        max-height:190px;
+      }
+      .faq-image-box img{
+        height:190px;
+        max-height:190px;
+        object-fit:cover;
+        object-position:center 20%;
+      }
+
+      .media-box.landscape{
+        aspect-ratio:auto;
+        max-height:200px;
+        min-height:0;
+      }
+      .media-box.landscape img{
+        width:70%;
+        max-width:240px;
+        max-height:180px;
+        height:auto;
+        object-fit:contain;
+        transform:scale(1);
+      }
+
+      .card{padding:20px}
+      .section-title{font-size:32px}
+      .feature-item{padding:12px 0}
+
+      .cta-band h3{font-size:26px}
+      .cta-band-inner{
+        padding:24px 22px;
+      }
+      .cta-band .btn{
+        width:100%;
+      }
+
+      .sticky-cta{display:block}
+      body{padding-bottom:90px}
+    }
+  </style>
+</head>
+<body>
+  <div class="top-accent"></div>
+
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="#top">
+        <img src="CITRUS-BURN-LOGO-RGB.png" alt="CitrusBurn logo" />
+      </a>
+
+      <a
+        class="btn btn-green"
+        href="https://7408d6mem4ypzz54mf5lz7xgob.hop.clickbank.net"
+        rel="nofollow sponsored noopener"
+        target="_blank"
+      >Check Official Website</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="newsbar">
+      <div class="wrap newsbar-inner">
+        <div class="tag">Featured Review</div>
+        <div>Independent overview • Premium layout • Updated for 2026</div>
+      </div>
+    </section>
+
+    <section class="hero">
+      <div class="wrap">
+        <div class="hero-shell">
+          <div class="hero-grid">
+            <div class="hero-left">
+              <h1>Thinking About Trying CitrusBurn?</h1>
+
+              <p class="hero-sub">
+                Here’s a fast overview of this clean, premium metabolism support formula and where to check the official offer.
+              </p>
+
+              <div class="hero-checks">
+                <div class="hero-check"><span>✓</span> Daily capsule formula</div>
+                <div class="hero-check"><span>✓</span> Metabolism support focus</div>
+                <div class="hero-check"><span>✓</span> Clean, premium presentation</div>
+              </div>
+
+              <div class="mini-offer">
+                <div>
+                  <h3>Want To Check The Current Deal?</h3>
+                  <p>Click below to visit the official CitrusBurn website for current package options and availability.</p>
+
+                  <a
+                    class="btn btn-green"
+                    href="https://7408d6mem4ypzz54mf5lz7xgob.hop.clickbank.net"
+                    rel="nofollow sponsored noopener"
+                    target="_blank"
+                  >Visit The Official CitrusBurn Site</a>
+                </div>
+
+                <img src="6 bottle.png" alt="CitrusBurn package image" />
+              </div>
+            </div>
+
+            <div class="hero-right">
+              <div class="product-panel">
+                <div class="product-visual">
+                  <img src="shoot5.png" alt="CitrusBurn bottle hero image" />
+
+                  <div class="product-badge">
+                    <strong>Premium Supplement</strong>
+                    <span>Built for a clean look and simple wellness angle.</span>
+                  </div>
+                </div>
+
+                <div class="product-info">
+                  <div class="pinfo">
+                    <strong>30 Capsules</strong>
+                    <span>Daily format</span>
+                  </div>
+                  <div class="pinfo">
+                    <strong>Official Site</strong>
+                    <span>Best place to verify</span>
+                  </div>
+                  <div class="pinfo">
+                    <strong>Simple Routine</strong>
+                    <span>Easy to fit in</span>
+                  </div>
+                </div>
+
+                <div class="panel-cta">
+                  <a
+                    class="btn btn-orange"
+                    href="https://7408d6mem4ypzz54mf5lz7xgob.hop.clickbank.net"
+                    rel="nofollow sponsored noopener"
+                    target="_blank"
+                  >CHECK THE OFFICIAL WEBSITE</a>
+
+                  <div class="cta-note">✔ Click to visit the official ordering path.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="review">
+      <div class="wrap grid-3">
+        <div class="card">
+          <div class="icon">🍊</div>
+          <h3>What It Is</h3>
+          <p>
+            CitrusBurn is presented as a daily supplement designed around metabolism and routine-friendly support.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">⚡</div>
+          <h3>Why It Gets Attention</h3>
+          <p>
+            The product feels more premium and easier to approach than many aggressive-looking offers in the category.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">🔎</div>
+          <h3>Why This Page Exists</h3>
+          <p>
+            This review gives you a cleaner first look before you continue to the official website for current details.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap grid-2">
+        <div class="card">
+          <h2 class="section-title">Why CitrusBurn Feels Different</h2>
+          <p class="section-sub">
+            Buyers usually want simplicity, cleaner branding, and a product that looks easier to trust.
+          </p>
+
+          <div class="feature-list">
+            <div class="feature-item">
+              <div class="tick">✓</div>
+              <div>
+                <strong>Metabolism-focused angle</strong>
+                <span>Positioned around daily support instead of an overly aggressive message.</span>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <div class="tick">✓</div>
+              <div>
+                <strong>Simple routine fit</strong>
+                <span>Built for people who want something straightforward to add to the day.</span>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <div class="tick">✓</div>
+              <div>
+                <strong>Modern presentation</strong>
+                <span>The visual style creates a cleaner and more premium first impression.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="media-card">
+          <div class="media-box portrait">
+            <img src="shoot6.png" alt="Lifestyle CitrusBurn image" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <h2 class="section-title">Quick Comparison</h2>
+        <p class="section-sub">A simple summary section helps reduce friction before the click.</p>
+
+        <table class="compare">
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>CitrusBurn Positioning</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Product Type</td>
+              <td>Daily dietary supplement</td>
+            </tr>
+            <tr>
+              <td>Main Angle</td>
+              <td>Metabolism and routine-friendly support</td>
+            </tr>
+            <tr>
+              <td>Brand Feel</td>
+              <td>Clean, modern, premium visual presentation</td>
+            </tr>
+            <tr>
+              <td>Best Place To Verify Details</td>
+              <td>Official website</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap grid-2">
+        <div class="media-card">
+          <div class="media-box landscape">
+            <img src="6 bottle.png" alt="CitrusBurn package image" />
+          </div>
+          <div class="media-caption">High-demand format shown on this review page for product presentation.</div>
+        </div>
+
+        <div class="card">
+          <h2 class="section-title">Who Might Look At CitrusBurn?</h2>
+          <p class="section-sub">
+            Not every product fits every routine — here’s who tends to connect most with CitrusBurn.
+          </p>
+
+          <div class="feature-list">
+            <div class="feature-item">
+              <div class="tick">•</div>
+              <div>
+                <strong>Routine-focused buyers</strong>
+                <span>People who want something simple enough to use consistently.</span>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <div class="tick">•</div>
+              <div>
+                <strong>Visitors exploring metabolism support</strong>
+                <span>Buyers often start with a clean overview before moving to the official site.</span>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <div class="tick">•</div>
+              <div>
+                <strong>People comparing package options</strong>
+                <span>The official site is the best place to verify what is currently available.</span>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top:18px;">
+            <a
+              class="btn btn-green"
+              href="https://7408d6mem4ypzz54mf5lz7xgob.hop.clickbank.net"
+              rel="nofollow sponsored noopener"
+              target="_blank"
+            >Check Official Website</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="cta-band">
+          <div class="cta-band-inner">
+            <div>
+              <h3>Ready To Learn More?</h3>
+              <p>Use the official website to view the latest ordering details and package availability.</p>
+            </div>
+
+            <a
+              class="btn btn-green"
+              href="https://7408d6mem4ypzz54mf5lz7xgob.hop.clickbank.net"
+              rel="nofollow sponsored noopener"
+              target="_blank"
+            >Visit Official Website</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap grid-2">
+        <div class="card">
+          <h2 class="section-title">Frequently Asked Questions</h2>
+
+          <div class="faq">
+            <details>
+              <summary>Is this the official CitrusBurn website?</summary>
+              <p>No. This is an independent review page. The official website is linked through the buttons on this page.</p>
+            </details>
+
+            <details>
+              <summary>Does CitrusBurn guarantee specific results?</summary>
+              <p>No. Individual experiences can vary, and this page does not promise guaranteed outcomes.</p>
+            </details>
+
+            <details>
+              <summary>Where can I check package options or pricing?</summary>
+              <p>The official CitrusBurn website is the best place to verify current package details and availability.</p>
+            </details>
+          </div>
+        </div>
+
+        <div class="media-card">
+          <div class="media-box portrait faq-image-box">
+            <img src="woman1.png" alt="Woman holding CitrusBurn bottle" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap legal">
+    <p>
+      Disclaimer: This website is an independent review page and is not the official CitrusBurn website.
+      The information provided is for general informational purposes only and should not be considered medical advice.
+      This page may contain affiliate links, and we may earn a commission if you choose to purchase through them.
+      Always verify product details, ingredients, pricing, and package options on the official website before ordering.
+    </p>
+  </footer>
+
+  <div class="sticky-cta">
+    <a
+      class="btn btn-green"
+      href="https://7408d6mem4ypzz54mf5lz7xgob.hop.clickbank.net"
+      rel="nofollow sponsored noopener"
+      target="_blank"
+    >Check Official Website</a>
+  </div>
+</body>
+</html>
