@@ -1064,5 +1064,33 @@
       setInterval(updateCountdown, 1000);
     })();
   </script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+
+  // TODOS OS BOTÕES COM LINK DE AFILIADO
+  var links = document.querySelectorAll('a[href*="hop.clickbank.net"]');
+
+  links.forEach(function(botao) {
+
+    // troca link para /go automaticamente
+    botao.setAttribute("href", "/go");
+
+    // adiciona ID
+    botao.setAttribute("id", "btn-prod");
+
+    // evento de conversão
+    botao.addEventListener("click", function() {
+      gtag('event', 'conversion', {
+        'send_to': 'AW-17961565555/ii-dCDNz-KAcEPP63vRC',
+'value': 1.0,
+'currency': 'BRL'
+      });
+    });
+
+  });
+
+});
+</script>
 </body>
 </html>
